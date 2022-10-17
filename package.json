@@ -1,0 +1,24 @@
+{
+  "name": "js-unit-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "Yazan",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "CoverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "reports",
+    "collectCoveragFrom": ["**/*.{js,jsx,ts}"],
+    "coveragePathIgnorePatterns": ["/node_modules"]
+  }
+}
